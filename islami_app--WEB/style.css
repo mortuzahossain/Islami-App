@@ -1,0 +1,56 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+}
+
+.fullscreen,
+.content-a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height: auto;
+    min-height: 100%;
+}
+
+.content-a {
+    display: table;
+}
+
+.content-b {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 2.25rem;
+}
+.content-b p{
+    font-family: 'Pacifico', cursive;
+}
+.content-b h1 {
+    font-family: 'Changa', sans-serif;
+    color: brown;
+    margin-top: 80px;
+}
+.content-b h2{
+    font-family: 'Galada', cursive;
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1140px;
+        max-width: 75%;
+    }   
+}
